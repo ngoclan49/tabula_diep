@@ -1,0 +1,76 @@
+@import "../utils/variables";
+@import "../components/buttons";
+.header {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  .container {
+    .logo__wrapper {
+      img {
+        height: 100%;
+        padding-left: 40px;
+      }
+      i {
+        display: none;
+      }
+    }
+    .navbar {
+      a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+        font-size: 13.5px;
+        position: relative;
+        transition: $smooth;
+      &:hover {
+        color: $primary--color;
+      }
+      &::after {
+        content: '';
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: $primary--color;
+        position: absolute;
+        top: 40px;
+        left: 40%;
+        opacity: 0;
+        transition: $smooth;
+      }
+      &:hover::after {
+        opacity: 1;
+      }
+      &.active::after {
+        opacity: 1;
+      }
+      }
+    }
+    .call-btn {
+      font-size: 13.5px;
+      font-weight: 500;
+      line-height: 13.5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      i {
+        margin-right: 5px;
+      }
+    }
+    .social__wrapper {
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-evenly;
+      a {
+        text-decoration: none;
+        color: #000;
+        transition: $smooth;
+        &:hover {
+          color: $primary--color;
+        }
+      }
+    }
+  }
+}

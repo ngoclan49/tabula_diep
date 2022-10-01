@@ -1,0 +1,39 @@
+@import "../utils/variables";
+
+.banner {
+  background-image: url(../../img/yellow_top_wave_01.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  .container {
+    .banner__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 290px;
+      word-spacing: 0.25px;
+      letter-spacing: 0.5px;
+      margin-left: 40px;
+      h1 {
+        color: $primary--color;
+        text-transform: uppercase;
+        font-size: 16.5px;
+        font-weight: 600;
+        line-height: 20px;
+      }
+      p {
+        font-size: 57px;
+        font-weight: 700;
+        line-height: 68px;
+      }
+    }
+    .banner__img {
+      margin-top: 70px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

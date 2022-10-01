@@ -1,0 +1,87 @@
+@import "../utils/variables";
+@import "../components/buttons";
+.contact {
+  padding-top: 110px;
+  background-image: url(../../img/accent_bottom_wave_01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -151px 42px;
+  .container {
+    .contact-left {
+      text-align: right;
+      img {
+        width: 80%;
+      }
+    }
+    .contact-right {
+      form {
+        width: 400px;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 9px 23px 24px 2px rgba(0, 0, 0, 0.33);
+        -webkit-box-shadow: 9px 23px 24px 2px rgba(0, 0, 0, 0.33);
+        -moz-box-shadow: 9px 23px 24px 2px rgba(0, 0, 0, 0.33);
+        .form-wrapper {
+          color: $primary--color;
+          width: 100%;
+          transition: all 0.75s;
+          padding: 12px 14px;
+          border: 1px solid #ddd;
+          border-radius: 20px;
+          font-size: 12px;
+          input {
+            width: 82%;
+            border: none;
+            &:focus-within {
+              outline: none;
+            }
+          }
+          &:focus-within {
+            border: 2px solid #ddd;
+          }
+        }
+        select {
+          width: 90%;
+          border: none;
+          background-color: transparent;
+          padding: 5px;
+          &:focus {
+            outline: none;
+          }
+          option {
+            background-color: white;
+            color: $primary--color;
+            transition: $smooth;
+            &:hover,
+            &:focus {
+              color: $primary--color;
+            }
+          }
+        }
+        textarea {
+          width: 92%;
+          border: none;
+          position: relative;
+          top: 0;
+          left: 24px;
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+        h1 {
+          font-weight: 700;
+          margin-bottom: 50px;
+        }
+        .fa-comment-dots {
+          position: absolute;
+        }
+        .button {
+          margin: 20px 0;
+          padding: 10px 60px;
+          border: 1px solid $primary--color;
+        }
+      }
+    }
+  }
+}
